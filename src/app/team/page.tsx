@@ -82,14 +82,12 @@ export default function Team() {
     { name: "VEKENSTEIN", twitch: "vekenstein", twitter: "home", youtube: "" }
   ];
 
-  const TeamMemberCard = ({ member, isManagement = false, imageId }: { member: TeamMember; isManagement?: boolean; imageId: number }) => (
+  const TeamMemberCard = ({ member, isManagement = false }: { member: TeamMember; isManagement?: boolean }) => (
     <div className="bg-zinc-900 p-6 rounded-lg text-center hover:bg-zinc-800 transition-colors group scale-in">
-      <div className="w-20 h-20 bg-red-600 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden border-2 border-red-500">
-        <img 
-          src={`https://picsum.photos/seed/${member.name.toLowerCase()}${imageId}/80/80`}
-          alt={member.name} 
-          className="w-full h-full object-cover"
-        />
+      <div className="w-20 h-20 bg-red-600 rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-red-500">
+        <span className="text-white text-2xl font-bold">
+          {member.name.charAt(0).toUpperCase()}
+        </span>
       </div>
       <h3 className="text-white font-bold text-lg uppercase mb-2 group-hover:text-red-400 transition-colors">
         {member.name}
@@ -171,7 +169,7 @@ export default function Team() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {managementTeam.map((member, index) => (
-              <TeamMemberCard key={index} member={member} isManagement={true} imageId={index + 100} />
+              <TeamMemberCard key={index} member={member} isManagement={true} />
             ))}
           </div>
         </div>
@@ -186,7 +184,7 @@ export default function Team() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {competitiveTeam.map((member, index) => (
-              <TeamMemberCard key={index} member={member} isManagement={false} imageId={index + 200} />
+              <TeamMemberCard key={index} member={member} isManagement={false} />
             ))}
           </div>
         </div>

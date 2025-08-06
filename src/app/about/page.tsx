@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 export default function About() {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -55,9 +56,11 @@ export default function About() {
             </div>
             
             <div className="relative fade-in-right stagger-delay-2 lg:col-span-2">
-              <img 
+              <Image 
                 src="/theboys.JPG" 
                 alt="The Boys - Merciless eSports Team" 
+                width={800}
+                height={600}
                 className="w-full h-auto rounded-lg shadow-xl border border-zinc-700"
               />
             </div>
@@ -112,9 +115,11 @@ export default function About() {
           <div className="relative">
             {/* Sorrow image - left of text - bigger */}
             <div className="absolute top-0 left-0 w-96 h-96 fade-in-left">
-              <img 
+              <Image 
                 src="/sorrow.JPG" 
                 alt="Sorrow - Merciless eSports" 
+                width={384}
+                height={384}
                 className="w-full h-full object-cover rounded-lg shadow-xl border border-zinc-700 filter-none"
                 style={{ imageRendering: 'auto' }}
               />
@@ -137,9 +142,11 @@ export default function About() {
             
             {/* Seli image - below text, overlapping with Sorrow - bigger */}
             <div className="ml-72 w-[28rem] h-80 fade-in-up stagger-delay-1">
-              <img 
+              <Image 
                 src="/seli.JPG" 
                 alt="Seli - Merciless eSports" 
+                width={448}
+                height={320}
                 className="w-full h-full object-cover rounded-lg shadow-2xl border-2 border-red-500 ring-2 ring-black filter-none"
                 style={{ imageRendering: 'auto' }}
               />
@@ -173,9 +180,11 @@ export default function About() {
             </div>
             
             <div className="relative fade-in-right">
-              <img 
+              <Image 
                 src="/esports.png" 
                 alt="Merciless eSports Origins" 
+                width={600}
+                height={400}
                 className="w-full h-auto rounded-lg shadow-xl border border-zinc-700"
               />
             </div>

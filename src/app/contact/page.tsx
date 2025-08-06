@@ -159,7 +159,7 @@ export default function Contact() {
             <div className="fade-in-right">
               {submitStatus === 'success' && (
                 <div className="mb-6 p-4 bg-green-600 text-white rounded-lg">
-                  ✅ Message sent successfully! We'll get back to you within 24-48 hours.
+                  ✅ Message sent successfully! We&apos;ll get back to you within 24-48 hours.
                 </div>
               )}
               

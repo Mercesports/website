@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
+import Image from "next/image";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -29,7 +30,7 @@ export default function RootLayout({
         {/* Navbar */}
         <header className="flex items-center justify-center px-4 sm:px-8 py-8 sm:py-12 border-b border-zinc-800 bg-black gap-8">
           <div className="flex items-center">
-            <img src="/merc.png" alt="Merciless Logo" className="h-24 sm:h-32 w-auto" />
+            <Image src="/merc.png" alt="Merciless Logo" width={128} height={128} className="h-24 sm:h-32 w-auto" />
           </div>
           <nav className="flex flex-wrap justify-center gap-4 sm:gap-8 text-base sm:text-lg font-semibold tracking-wide uppercase text-white">
             <Link href="/" className="hover:text-red-500 transition-colors">Home</Link>

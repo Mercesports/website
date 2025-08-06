@@ -16,7 +16,7 @@ export default function Blog() {
             </h2>
             <p className="text-zinc-300 mb-4 text-sm sm:text-base">
               The team is preparing for the biggest Off The Grid tournament yet. Our strategies are locked in, 
-              and we're ready to dominate the competition.
+              and we&apos;re ready to dominate the competition.
             </p>
             <a href="#" className="text-red-500 hover:text-red-400 font-semibold uppercase tracking-wide">
               READ MORE →

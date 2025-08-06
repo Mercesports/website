@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Image from "next/image";
 
 export default function Sponsors() {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -75,9 +76,11 @@ export default function Sponsors() {
   const SponsorCard = ({ sponsor, isLarge = false }: { sponsor: Sponsor; isLarge?: boolean }) => (
     <div className={`bg-zinc-900 ${isLarge ? 'p-8' : 'p-6'} rounded-lg text-center hover:bg-zinc-800 transition-colors group border border-zinc-800 scale-in`}>
       <div className={`${isLarge ? 'w-32 h-32' : 'w-20 h-20'} bg-zinc-800 rounded-lg mx-auto mb-4 flex items-center justify-center overflow-hidden`}>
-        <img 
+        <Image 
           src={sponsor.logo} 
           alt={sponsor.name} 
+          width={isLarge ? 128 : 80}
+          height={isLarge ? 128 : 80}
           className="w-full h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity"
         />
       </div>
