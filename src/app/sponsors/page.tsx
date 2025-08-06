@@ -66,7 +66,13 @@ export default function Sponsors() {
     }
   ];
 
-  const SponsorCard = ({ sponsor, isLarge = false }: { sponsor: any; isLarge?: boolean }) => (
+  interface Sponsor {
+    name: string;
+    logo: string;
+    description: string;
+  }
+
+  const SponsorCard = ({ sponsor, isLarge = false }: { sponsor: Sponsor; isLarge?: boolean }) => (
     <div className={`bg-zinc-900 ${isLarge ? 'p-8' : 'p-6'} rounded-lg text-center hover:bg-zinc-800 transition-colors group border border-zinc-800 scale-in`}>
       <div className={`${isLarge ? 'w-32 h-32' : 'w-20 h-20'} bg-zinc-800 rounded-lg mx-auto mb-4 flex items-center justify-center overflow-hidden`}>
         <img 
@@ -105,7 +111,7 @@ export default function Sponsors() {
       <section className="py-16 sm:py-20 px-4 sm:px-8 bg-zinc-900 section-fade">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-xl sm:text-2xl text-zinc-300 leading-relaxed max-w-4xl mx-auto mb-8 fade-in-up">
-            If you're interested in partnering with us and becoming a part of the Merciless legacy, contact us today!
+            If you&apos;re interested in partnering with us and becoming a part of the Merciless legacy, contact us today!
           </p>
           <a href="#contact" className="inline-block bg-red-600 hover:bg-red-700 px-8 py-4 font-semibold text-white rounded uppercase tracking-wide transition-colors text-lg fade-in-up stagger-delay-1">
             BECOME A SPONSOR

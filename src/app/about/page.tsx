@@ -162,8 +162,8 @@ export default function About() {
                 recognition, recruiting the best talent and refining strategies.
               </p>
               <p className="text-zinc-300 text-lg leading-relaxed mb-6">
-                After Off The Grid's official launch, Merciless expanded rapidly—bringing in more elite players,
-                forming console teams, and earning invitations to the game's largest tournament,
+                After Off The Grid&apos;s official launch, Merciless expanded rapidly—bringing in more elite players,
+                forming console teams, and earning invitations to the game&apos;s largest tournament,
                 where we competed against top-tier teams and major Twitch streamers.
               </p>
               <p className="text-zinc-300 text-lg leading-relaxed">

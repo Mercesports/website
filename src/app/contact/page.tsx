@@ -114,8 +114,8 @@ export default function Contact() {
                 GET IN TOUCH
               </h2>
               <p className="text-zinc-300 text-lg leading-relaxed mb-8">
-                Whether you're interested in joining our team, exploring partnership opportunities, 
-                or have general inquiries about Merciless eSports, we'd love to hear from you.
+                Whether you&apos;re interested in joining our team, exploring partnership opportunities, 
+                or have general inquiries about Merciless eSports, we&apos;d love to hear from you.
               </p>
               
               <div className="space-y-6">

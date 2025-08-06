@@ -73,7 +73,7 @@ export default function Home() {
             <div className="fade-in-left stagger-delay-1">
               <p className="text-zinc-300 text-xl sm:text-2xl leading-relaxed mb-8">
                 Merciless eSports started as the first dominant team in Off The Grid, setting the standard for competition. 
-                Now, we're expanding into Avalanche (AVAX) chain games, bringing our elite gameplay, strategy, and 
+                Now, we&apos;re expanding into Avalanche (AVAX) chain games, bringing our elite gameplay, strategy, and 
                 community-driven approach to the next level of Web3 esports. The grind never stops—Merciless is here to conquer.
               </p>
               <div>

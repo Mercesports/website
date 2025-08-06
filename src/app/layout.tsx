@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -31,11 +32,11 @@ export default function RootLayout({
             <img src="/merc.png" alt="Merciless Logo" className="h-24 sm:h-32 w-auto" />
           </div>
           <nav className="flex flex-wrap justify-center gap-4 sm:gap-8 text-base sm:text-lg font-semibold tracking-wide uppercase text-white">
-            <a href="/" className="hover:text-red-500 transition-colors">Home</a>
-            <a href="/about" className="hover:text-red-500 transition-colors">About</a>
-            <a href="/team" className="hover:text-red-500 transition-colors">Team</a>
-            <a href="/sponsors" className="hover:text-red-500 transition-colors">Sponsors</a>
-            <a href="/contact" className="hover:text-red-500 transition-colors">Contact</a>
+            <Link href="/" className="hover:text-red-500 transition-colors">Home</Link>
+            <Link href="/about" className="hover:text-red-500 transition-colors">About</Link>
+            <Link href="/team" className="hover:text-red-500 transition-colors">Team</Link>
+            <Link href="/sponsors" className="hover:text-red-500 transition-colors">Sponsors</Link>
+            <Link href="/contact" className="hover:text-red-500 transition-colors">Contact</Link>
           </nav>
         </header>
         

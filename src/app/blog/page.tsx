@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Blog() {
   return (
     <div className="min-h-screen bg-black py-16 sm:py-20 px-4 sm:px-8">
@@ -41,7 +43,7 @@ export default function Blog() {
               MERCILESS EXPANDS INTO AVALANCHE GAMING
             </h2>
             <p className="text-zinc-300 mb-4 text-sm sm:text-base">
-              We're officially expanding our dominance from Off The Grid into the Avalanche ecosystem, 
+              We&apos;re officially expanding our dominance from Off The Grid into the Avalanche ecosystem, 
               bringing our competitive edge to Web3 gaming.
             </p>
             <a href="#" className="text-red-500 hover:text-red-400 font-semibold uppercase tracking-wide">
@@ -65,9 +67,9 @@ export default function Blog() {
         </div>
         
         <div className="text-center">
-          <a href="/" className="inline-block bg-red-600 hover:bg-red-700 px-6 py-3 font-semibold text-white rounded uppercase tracking-wide transition-colors">
+          <Link href="/" className="inline-block bg-red-600 hover:bg-red-700 px-6 py-3 font-semibold text-white rounded uppercase tracking-wide transition-colors">
             BACK TO HOME
-          </a>
+          </Link>
         </div>
       </div>
     </div>
